@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230828 18:24:45.581" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites" source="C:\Users\Dayen\OneDrive\Área de Trabalho\Testes Automatizados\Swag Labs\suites">
+<suite id="s1-s1" name="Compraonline" source="C:\Users\Dayen\OneDrive\Área de Trabalho\Testes Automatizados\Swag Labs\suites\compraonline">
+<suite id="s1-s1-s1" name="Lojaonline" source="C:\Users\Dayen\OneDrive\Área de Trabalho\Testes Automatizados\Swag Labs\suites\compraonline\lojaonline.robot">
+<test id="s1-s1-s1-t1" name="TC01 - Selecionar itens na loja" line="75">
+<kw name="Acessar o site e Logar" library="setup_teardoown" type="SETUP">
+<kw name="Dado que eu acesso o site Saucedemo" library="login_page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 18:24:45.794" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230828 18:24:45.794" endtime="20230828 18:24:47.771"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input_user}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230828 18:24:47.772" endtime="20230828 18:24:47.798"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:45.793" endtime="20230828 18:24:47.798"/>
+</kw>
+<kw name=" E informe o login" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_user}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:47.799" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20230828 18:24:47.798" endtime="20230828 18:24:47.900"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:24:49.901" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:24:47.900" endtime="20230828 18:24:49.901"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:47.798" endtime="20230828 18:24:49.901"/>
+</kw>
+<kw name="E informe a senha" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:49.903" level="INFO">Typing text 'secret_sauce' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230828 18:24:49.902" endtime="20230828 18:24:49.982"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:24:51.983" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:24:49.982" endtime="20230828 18:24:51.983"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:49.901" endtime="20230828 18:24:51.983"/>
+</kw>
+<kw name="Então, sera aberto o site com os itens de vendas" library="login_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:51.985" level="INFO">Clicking element '//input[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:51.984" endtime="20230828 18:24:52.064"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:24:54.066" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:24:52.064" endtime="20230828 18:24:54.066"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:51.983" endtime="20230828 18:24:54.066"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:45.793" endtime="20230828 18:24:54.067"/>
+</kw>
+<kw name="Dado que eu visualize os produtos do site Swag Labs">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230828 18:24:54.069" endtime="20230828 18:24:54.185"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.068" endtime="20230828 18:24:54.185"/>
+</kw>
+<kw name="E selecione a bolsa Sauce Labs Backpack">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.186" level="INFO">Clicking element '//a[@id="item_4_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.186" endtime="20230828 18:24:54.239"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.186" endtime="20230828 18:24:54.239"/>
+</kw>
+<kw name="E adicione no carrinho">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.240" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-backpack"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.240" endtime="20230828 18:24:54.321"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.239" endtime="20230828 18:24:54.321"/>
+</kw>
+<kw name="E busque mais produtos">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_back}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.323" level="INFO">Clicking element '//button[@id="back-to-products"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.322" endtime="20230828 18:24:54.380"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.321" endtime="20230828 18:24:54.380"/>
+</kw>
+<kw name="E selecione a jaqueta Sauce Labs Fleece Jacket">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.381" level="INFO">Clicking element '//a[@id="item_5_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.380" endtime="20230828 18:24:54.422"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.380" endtime="20230828 18:24:54.423"/>
+</kw>
+<kw name="E adicione no carrinho 2">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.424" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-fleece-jacket"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.424" endtime="20230828 18:24:54.467"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.423" endtime="20230828 18:24:54.468"/>
+</kw>
+<kw name="E eu acesse meu carrinho">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_carrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.469" level="INFO">Clicking element '//a[@class="shopping_cart_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.468" endtime="20230828 18:24:54.509"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.468" endtime="20230828 18:24:54.509"/>
+</kw>
+<kw name="E confirme meus intes selecionados ao clicar checkout">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_checkout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.510" level="INFO">Clicking element '//button[@id="checkout"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.510" endtime="20230828 18:24:54.552"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.510" endtime="20230828 18:24:54.552"/>
+</kw>
+<kw name="E informe meus dados e clico em continue">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_first_name}</arg>
+<arg>Dayene</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.553" level="INFO">Typing text 'Dayene' into text field '//input[@id="first-name"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.552" endtime="20230828 18:24:54.639"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_last_name}</arg>
+<arg>Sousa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.640" level="INFO">Typing text 'Sousa' into text field '//input[@id="last-name"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.639" endtime="20230828 18:24:54.704"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_postal}</arg>
+<arg>50680000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:54.705" level="INFO">Typing text '50680000' into text field '//input[@id="postal-code"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:54.704" endtime="20230828 18:24:54.775"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:24:58.777" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230828 18:24:54.775" endtime="20230828 18:24:58.777"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:54.552" endtime="20230828 18:24:58.777"/>
+</kw>
+<kw name="E visualizo o total da compra">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:24:58.779" level="INFO">Clicking element '//input[@id="continue"]'.</msg>
+<status status="PASS" starttime="20230828 18:24:58.778" endtime="20230828 18:24:58.840"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:00.841" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:24:58.840" endtime="20230828 18:25:00.841"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:58.778" endtime="20230828 18:25:00.841"/>
+</kw>
+<kw name="Então, finalizo a compra e Fecho o navegador">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_finisht}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:00.842" level="INFO">Clicking element '//button[@id="finish"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:00.842" endtime="20230828 18:25:00.889"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:04.889" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230828 18:25:00.889" endtime="20230828 18:25:04.889"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 18:25:04.890" endtime="20230828 18:25:07.107"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:00.842" endtime="20230828 18:25:07.107"/>
+</kw>
+<status status="PASS" starttime="20230828 18:24:45.793" endtime="20230828 18:25:07.108"/>
+</test>
+<status status="PASS" starttime="20230828 18:24:45.603" endtime="20230828 18:25:07.112"/>
+</suite>
+<status status="PASS" starttime="20230828 18:24:45.600" endtime="20230828 18:25:07.118"/>
+</suite>
+<suite id="s1-s2" name="Remover Item" source="C:\Users\Dayen\OneDrive\Área de Trabalho\Testes Automatizados\Swag Labs\suites\remover_item">
+<suite id="s1-s2-s1" name="Remover Item" source="C:\Users\Dayen\OneDrive\Área de Trabalho\Testes Automatizados\Swag Labs\suites\remover_item\remover_item.robot">
+<test id="s1-s2-s1-t1" name="TC01 - Remover itens do carrinho e comprar novamente" line="145">
+<kw name="Acessar o site e Logar" library="setup_teardoown" type="SETUP">
+<kw name="Dado que eu acesso o site Saucedemo" library="login_page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 18:25:07.136" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230828 18:25:07.136" endtime="20230828 18:25:09.116"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input_user}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230828 18:25:09.116" endtime="20230828 18:25:09.145"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:07.135" endtime="20230828 18:25:09.145"/>
+</kw>
+<kw name=" E informe o login" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_user}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:09.145" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20230828 18:25:09.145" endtime="20230828 18:25:09.264"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:11.266" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:25:09.264" endtime="20230828 18:25:11.266"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:09.145" endtime="20230828 18:25:11.266"/>
+</kw>
+<kw name="E informe a senha" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:11.267" level="INFO">Typing text 'secret_sauce' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230828 18:25:11.266" endtime="20230828 18:25:11.348"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:13.349" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:25:11.348" endtime="20230828 18:25:13.349"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:11.266" endtime="20230828 18:25:13.349"/>
+</kw>
+<kw name="Então, sera aberto o site com os itens de vendas" library="login_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:13.351" level="INFO">Clicking element '//input[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:13.350" endtime="20230828 18:25:13.442"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:15.443" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:25:13.442" endtime="20230828 18:25:15.443"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:13.349" endtime="20230828 18:25:15.443"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:07.135" endtime="20230828 18:25:15.443"/>
+</kw>
+<kw name="Dado que eu visualize os produtos do site Swag Labs">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230828 18:25:15.445" endtime="20230828 18:25:15.578"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.445" endtime="20230828 18:25:15.578"/>
+</kw>
+<kw name="E selecione a bike light">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item0}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.579" level="INFO">Clicking element '//a[@id="item_0_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.579" endtime="20230828 18:25:15.632"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.579" endtime="20230828 18:25:15.632"/>
+</kw>
+<kw name="E adicione no carrinho a bike light">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_0}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.633" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-bike-light"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.633" endtime="20230828 18:25:15.696"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.633" endtime="20230828 18:25:15.696"/>
+</kw>
+<kw name="E busque mais produtos">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_back}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.697" level="INFO">Clicking element '//button[@id="back-to-products"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.697" endtime="20230828 18:25:15.763"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.696" endtime="20230828 18:25:15.763"/>
+</kw>
+<kw name="E selecione a t-shirt">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.764" level="INFO">Clicking element '//a[@id="item_1_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.764" endtime="20230828 18:25:15.808"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.764" endtime="20230828 18:25:15.809"/>
+</kw>
+<kw name="E adicione no carrinho a t-shirt">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.812" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-bolt-t-shirt"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.810" endtime="20230828 18:25:15.852"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.809" endtime="20230828 18:25:15.852"/>
+</kw>
+<kw name="E busque mais produtos 1">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_back}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.852" level="INFO">Clicking element '//button[@id="back-to-products"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.852" endtime="20230828 18:25:15.887"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.852" endtime="20230828 18:25:15.887"/>
+</kw>
+<kw name="E selecione a onesie">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.888" level="INFO">Clicking element '//a[@id="item_2_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.888" endtime="20230828 18:25:15.936"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.888" endtime="20230828 18:25:15.936"/>
+</kw>
+<kw name="E adicione no carrinho a onesie">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.937" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-onesie"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.937" endtime="20230828 18:25:15.980"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.937" endtime="20230828 18:25:15.980"/>
+</kw>
+<kw name="E busque mais produtos 3">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_back}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:15.981" level="INFO">Clicking element '//button[@id="back-to-products"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:15.981" endtime="20230828 18:25:16.021"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:15.981" endtime="20230828 18:25:16.021"/>
+</kw>
+<kw name="E selecione a bolsa Sauce Labs Backpack">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.022" level="INFO">Clicking element '//a[@id="item_4_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.021" endtime="20230828 18:25:16.065"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.021" endtime="20230828 18:25:16.065"/>
+</kw>
+<kw name="E adicione no carrinho a bolsa Sauce Labs Backpack">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.067" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-backpack"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.066" endtime="20230828 18:25:16.114"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.066" endtime="20230828 18:25:16.114"/>
+</kw>
+<kw name="E busque mais produtos 4">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_back}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.115" level="INFO">Clicking element '//button[@id="back-to-products"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.115" endtime="20230828 18:25:16.155"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.115" endtime="20230828 18:25:16.155"/>
+</kw>
+<kw name="E selecione a fleece-jacket">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.156" level="INFO">Clicking element '//a[@id="item_5_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.155" endtime="20230828 18:25:16.199"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.155" endtime="20230828 18:25:16.199"/>
+</kw>
+<kw name="E adicione no carrinho a fleece-jacket">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.201" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-fleece-jacket"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.199" endtime="20230828 18:25:16.236"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.199" endtime="20230828 18:25:16.236"/>
+</kw>
+<kw name="E eu acesse meu carrinho">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_carrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.237" level="INFO">Clicking element '//a[@class="shopping_cart_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.237" endtime="20230828 18:25:16.288"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.237" endtime="20230828 18:25:16.288"/>
+</kw>
+<kw name="E removo todos os itens">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${remove_0}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.290" level="INFO">Clicking element '//button[@id="remove-sauce-labs-bike-light"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.289" endtime="20230828 18:25:16.327"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${remove_1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.327" level="INFO">Clicking element '//button[@id="remove-sauce-labs-bolt-t-shirt"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.327" endtime="20230828 18:25:16.363"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${remove_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.364" level="INFO">Clicking element '//button[@id="remove-sauce-labs-onesie"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.364" endtime="20230828 18:25:16.393"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${remove_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.393" level="INFO">Clicking element '//button[@id="remove-sauce-labs-backpack"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.393" endtime="20230828 18:25:16.424"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${remove_5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.425" level="INFO">Clicking element '//button[@id="remove-sauce-labs-fleece-jacket"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.425" endtime="20230828 18:25:16.454"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.289" endtime="20230828 18:25:16.454"/>
+</kw>
+<kw name="E volte para comprar outro produto">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.456" level="INFO">Clicking element '//button[@id="continue-shopping"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.455" endtime="20230828 18:25:16.496"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.455" endtime="20230828 18:25:16.496"/>
+</kw>
+<kw name="E adiciono no carrinho novamente a fleece-jacket">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.497" level="INFO">Clicking element '//button[@id="add-to-cart-sauce-labs-fleece-jacket"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.497" endtime="20230828 18:25:16.534"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.497" endtime="20230828 18:25:16.534"/>
+</kw>
+<kw name="E clico novamente na fleece-jacket">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_item5}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.535" level="INFO">Clicking element '//a[@id="item_5_title_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.535" endtime="20230828 18:25:16.570"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.534" endtime="20230828 18:25:16.570"/>
+</kw>
+<kw name="E eu acesse meu carrinho novamente">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${a_carrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.571" level="INFO">Clicking element '//a[@class="shopping_cart_link"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.571" endtime="20230828 18:25:16.616"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.571" endtime="20230828 18:25:16.616"/>
+</kw>
+<kw name="E confirme meus intes selecionados ao clicar checkout">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_checkout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.617" level="INFO">Clicking element '//button[@id="checkout"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.617" endtime="20230828 18:25:16.661"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.617" endtime="20230828 18:25:16.661"/>
+</kw>
+<kw name="E informe meus dados e clico em continue">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_first_name}</arg>
+<arg>Dayene</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.662" level="INFO">Typing text 'Dayene' into text field '//input[@id="first-name"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.661" endtime="20230828 18:25:16.739"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_last_name}</arg>
+<arg>Sousa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.740" level="INFO">Typing text 'Sousa' into text field '//input[@id="last-name"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.739" endtime="20230828 18:25:16.803"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_postal}</arg>
+<arg>50680000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:16.804" level="INFO">Typing text '50680000' into text field '//input[@id="postal-code"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:16.804" endtime="20230828 18:25:16.870"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:20.871" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230828 18:25:16.870" endtime="20230828 18:25:20.871"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:16.661" endtime="20230828 18:25:20.871"/>
+</kw>
+<kw name="E visualizo o total da compra">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:20.873" level="INFO">Clicking element '//input[@id="continue"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:20.872" endtime="20230828 18:25:20.937"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:22.939" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 18:25:20.938" endtime="20230828 18:25:22.939"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:20.872" endtime="20230828 18:25:22.939"/>
+</kw>
+<kw name="Então, finalizo a compra e Fecho o navegador">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_finisht}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 18:25:22.940" level="INFO">Clicking element '//button[@id="finish"]'.</msg>
+<status status="PASS" starttime="20230828 18:25:22.939" endtime="20230828 18:25:23.001"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 18:25:27.001" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230828 18:25:23.001" endtime="20230828 18:25:27.001"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 18:25:27.001" endtime="20230828 18:25:29.210"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:22.939" endtime="20230828 18:25:29.210"/>
+</kw>
+<status status="PASS" starttime="20230828 18:25:07.135" endtime="20230828 18:25:29.211"/>
+</test>
+<status status="PASS" starttime="20230828 18:25:07.128" endtime="20230828 18:25:29.215"/>
+</suite>
+<status status="PASS" starttime="20230828 18:25:07.121" endtime="20230828 18:25:29.219"/>
+</suite>
+<status status="PASS" starttime="20230828 18:24:45.583" endtime="20230828 18:25:29.220"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Compraonline">Suites.Compraonline</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Lojaonline">Suites.Compraonline.Lojaonline</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Remover Item">Suites.Remover Item</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2-s1" name="Remover Item">Suites.Remover Item.Remover Item</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
