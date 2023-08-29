@@ -1,4 +1,4 @@
-﻿# Projeto de Testes Automatizados com Robot: Swag Labs
+﻿# Projeto de Teste Automatizado com Robot
 
 <table>
 <tr>
