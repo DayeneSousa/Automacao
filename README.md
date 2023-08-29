@@ -1,10 +1,10 @@
-﻿# Projeto de Testes Automatizados com Robot
+﻿# Projeto de Testes Automatizados com Robot: Swag Labs
 
 <table>
 <tr>
 <td>
 	
-  Testes de compra: Swag Labs  
+  
       Com foco: Robot e HTML 
 
 
