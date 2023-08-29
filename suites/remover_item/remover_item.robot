@@ -60,7 +60,8 @@ E selecione a t-shirt
     Click Element        ${a_item1} 
 
 E adicione no carrinho a t-shirt 
-    Click Element        ${button_1} 
+    Click Element        ${button_1}
+    sleep                  2s 
 
 E busque mais produtos 1
     Click Element        ${button_back}    
@@ -70,6 +71,7 @@ E selecione a onesie
 
 E adicione no carrinho a onesie 
     Click Element         ${button_2} 
+    sleep                  2s
 
 #E busque mais produtos 2
     #Click Element        ${button_back}    
@@ -97,18 +99,25 @@ E selecione a fleece-jacket
     Click Element        ${a_item5} 
 
 E adicione no carrinho a fleece-jacket
-    Click Element         ${button_5}     
+    Click Element         ${button_5}
+    sleep                  2s     
 
 E eu acesse meu carrinho
-    Click Element        ${a_carrinho}    
+    Click Element        ${a_carrinho}
+    sleep                  2s    
 
 E removo todos os itens 
     click Element         ${remove_0}
+    sleep                  2s
     click Element         ${remove_1}  
-    click Element         ${remove_2}  
+    sleep                  2s
+    click Element         ${remove_2}
+    sleep                  2s  
     #click Element         ${remove_3}  
-    click Element         ${remove_4}  
-    click Element         ${remove_5}    
+    click Element         ${remove_4}
+    sleep                  2s  
+    click Element         ${remove_5} 
+    sleep                  2s   
 
 E volte para comprar outro produto
     Click Element         ${button_continue}

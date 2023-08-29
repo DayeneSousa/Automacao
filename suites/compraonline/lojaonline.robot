@@ -37,7 +37,8 @@ E selecione a bolsa Sauce Labs Backpack
     Click Element        ${a_item4} 
 
 E adicione no carrinho 
-    Click Element         ${button_4} 
+    Click Element         ${button_4}
+    sleep                  2s 
 
 E busque mais produtos
     Click Element        ${button_back}
@@ -47,10 +48,12 @@ E selecione a jaqueta Sauce Labs Fleece Jacket
 
 E adicione no carrinho 2
     Click Element        ${button_5}  
+    sleep                  2s
 
 E eu acesse meu carrinho
 
-    Click Element        ${a_carrinho}    
+    Click Element        ${a_carrinho}
+    sleep                  2s    
 
 E confirme meus intes selecionados ao clicar checkout
     Click Element       ${button_checkout}  
