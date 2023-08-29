@@ -5,7 +5,7 @@
 <td>
 	
  
- Padrão BDD com foco: Robot e HTML 
+ Projeto Estruturado utilizando o sistema Swag LabsM (Site de Compras) (https://www.saucedemo.com/)
 
 
 
