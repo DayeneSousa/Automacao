@@ -5,7 +5,7 @@
 <td>
 	
  
- Projeto Estruturado utilizando o sistema Swag LabsM (Site de Compras) (https://www.saucedemo.com/)
+ Projeto Estruturado com padrão BDD: Sistema Swag Labs - Site de Compras  (https://www.saucedemo.com/)
 
 
 
