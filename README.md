@@ -5,7 +5,7 @@
 <td>
 	
  
- Com foco: Robot e HTML 
+ Padrão BDD com foco: Robot e HTML 
 
 
 
